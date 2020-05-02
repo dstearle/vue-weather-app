@@ -1,29 +1,13 @@
 # vue-weather-app
 
-## Project setup
-```
-npm install
-```
+<br>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+**What Is This Project? :**
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Using Vue and the API called OpenWeather I built a simple weather app where you can search up the temperature for a given area.
 
-### Run your tests
-```
-npm run test
-```
+<br>
 
-### Lints and fixes files
-```
-npm run lint
-```
+**Notes:**
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- To run the application use "npm run serve"
