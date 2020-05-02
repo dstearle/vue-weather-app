@@ -4,9 +4,33 @@
 
 		<main>
 
+			<!-- Search Input -->
 			<div class="search-box">
 
-				<input type="text" class="search-box" placeholder="Search..."/>
+				<input type="text" class="search-bar" placeholder="Search..."/>
+
+			</div>
+
+			<!-- Information -->
+			<div class="weather-wrap">
+
+				<!-- Location & Date -->
+				<div class="location-box">
+
+					<div class="location">San Diego, CA</div>
+
+					<div class="date">Saturday May 2 2020</div>
+
+				</div>
+
+				<!-- Temperature & Weather -->
+				<div class="weather-box">
+
+					<div class="temp">69</div>
+
+					<div class="weather">Fog</div>
+
+				</div>
 
 			</div>
 
@@ -89,7 +113,7 @@
 	.search-box .search-bar:focus {
 		box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
 		background-color: rgba(255, 255, 255, 0.75);
-		border-radius: 0px 16px 0px 16px;
+		border-radius: 16px 0px 16px 0px;
 	}
 	
 </style>
