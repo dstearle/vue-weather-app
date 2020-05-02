@@ -7,7 +7,12 @@
 			<!-- Search Input -->
 			<div class="search-box">
 
-				<input type="text" class="search-bar" placeholder="Search..."/>
+				<input 
+					type="text" 
+					class="search-bar" 
+					placeholder="Search..."
+					v-model="query"
+				/>
 
 			</div>
 
@@ -50,7 +55,10 @@
 
 			return {
 
-				api_key: '872e27b99ee063355a94208b358ae359'
+				api_key: '872e27b99ee063355a94208b358ae359',
+				url_base: 'https://api.openweathermap.org/data/2.5/',
+				query: '',
+				weather: {}
 
 			}
 
