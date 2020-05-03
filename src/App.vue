@@ -79,9 +79,16 @@
 				// Passes json data to setResults method
 				.then(this.setResults);
 
+			},
+
+			// Sets the data retrieved from fetchWeather to 'weather' in data
+			setResults(results) {
+
+				this.weather = results;
+
 			}
 
-		}
+		},
 
 	}
 
