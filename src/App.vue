@@ -17,8 +17,8 @@
 
 			</div>
 
-			<!-- Information -->
-			<div class="weather-wrap">
+			<!-- Information Wrapper -->
+			<div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
 
 				<!-- Location & Date -->
 				<div class="location-box">
