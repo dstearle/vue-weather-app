@@ -23,7 +23,7 @@
 				<!-- Location & Date -->
 				<div class="location-box">
 
-					<div class="location">San Diego, CA</div>
+					<div class="location">{{ weather.name }}, {{ weather.sys.country }}</div>
 
 					<div class="date">Saturday May 2 2020</div>
 
