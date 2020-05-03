@@ -12,6 +12,7 @@
 					class="search-bar" 
 					placeholder="Search..."
 					v-model="query"
+					@keyup.enter="fetchWeather"
 				/>
 
 			</div>
@@ -59,6 +60,24 @@
 				url_base: 'https://api.openweathermap.org/data/2.5/',
 				query: '',
 				weather: {}
+
+			}
+
+		},
+
+		methods: {
+
+			// Retrieves the data for weather
+			fetchWeather() {
+
+				// Fetches API information
+				fetch(`${this.url_base}weather?q=${this.query}&APPID=${this.api_key}`)
+				// Callback for json data
+				.then(res => {
+					return res.json();
+				})
+				// Passes json data to setResults method
+				.then(this.setResults);
 
 			}
 
