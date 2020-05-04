@@ -25,7 +25,7 @@
 
 					<div class="location">{{ weather.name }}, {{ weather.sys.country }}</div>
 
-					<div class="date">Saturday May 2 2020</div>
+					<div class="date">{{ dateBuilder() }}</div>
 
 				</div>
 
