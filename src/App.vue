@@ -32,9 +32,9 @@
 				<!-- Temperature & Weather -->
 				<div class="weather-box">
 
-					<div class="temp">69</div>
+					<div class="temp">{{ Math.round(weather.main.temp) }}</div>
 
-					<div class="weather">Fog</div>
+					<div class="weather">{{ weather.weather[0].main }}</div>
 
 				</div>
 
