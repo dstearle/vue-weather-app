@@ -86,6 +86,26 @@
 
 				this.weather = results;
 
+			},
+
+			// Retrieves and formats the date for the UI
+			dateBuilder () {
+
+				// Retrieves today's date
+				let d = new Date();
+				
+				// Array of strings for months and days to be used below
+				let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+				let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+				let day = days[d.getDay()];
+				let date = d.getDate();
+				let month = months[d.getMonth()];
+				let year = d.getFullYear();
+
+				// The formatted date to be used
+				return `${day} ${date} ${month} ${year}`;
+
 			}
 
 		},
