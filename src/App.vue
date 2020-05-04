@@ -32,7 +32,7 @@
 				<!-- Temperature & Weather -->
 				<div class="weather-box">
 
-					<div class="temp">{{ Math.round(weather.main.temp) }}</div>
+					<div class="temp">{{ Math.round(weather.main.temp) }}°F</div>
 
 					<div class="weather">{{ weather.weather[0].main }}</div>
 
@@ -71,7 +71,7 @@
 			fetchWeather() {
 
 				// Fetches API information
-				fetch(`${this.url_base}weather?q=${this.query}&APPID=${this.api_key}`)
+				fetch(`${this.url_base}weather?q=${this.query}&units=imperial&APPID=${this.api_key}`)
 				// Callback for json data
 				.then(res => {
 					return res.json();
